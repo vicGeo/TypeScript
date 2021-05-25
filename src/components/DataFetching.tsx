@@ -11,6 +11,7 @@ interface IPost {
 
 function DataFetching() {
   const [posts, setPosts] = useState<IPost[]>([]);
+  const [showPosts, setShowPosts] = useState(true);
 
   const getPosts = () => {
     axios
@@ -22,6 +23,15 @@ function DataFetching() {
       .catch((err) => {
         console.log(err);
       });
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+  const handleShow = () => {
+    setShowPosts(!showPosts);
+    getPosts();
   };
 
   return <></>;
