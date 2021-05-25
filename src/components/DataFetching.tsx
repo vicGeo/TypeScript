@@ -10,6 +10,20 @@ interface IPost {
 }
 
 function DataFetching() {
+  const [posts, setPosts] = useState<IPost[]>([]);
+
+  const getPosts = () => {
+    axios
+      .get("http://jsonplaceholder.typicode.com/posts")
+      .then((res) => {
+        // console.log(res);
+        setPosts(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return <></>;
 }
 
