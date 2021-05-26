@@ -34,7 +34,34 @@ function DataFetching() {
     getPosts();
   };
 
-  return <></>;
+  return (
+    <>
+      <div className="buttonPosts">
+        {!showPosts ? (
+          <button className="styleButton" onClick={handleShow}>
+            Show Posts!
+          </button>
+        ) : (
+          <button className="styleButton" onClick={handleShow}>
+            Hidden Posts!
+          </button>
+        )}
+      </div>
+      {showPosts && (
+        <div className="cards_wrap">
+          {posts.map((post) => (
+            <div className="card_item" key={post.id}>
+              <div className="card_inner">
+                <div className="title_post">{post.title}</div>
+                <div className="user_id">User {post.userId}</div>
+                <div className="comment_post">{post.body}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </>
+  );
 }
 
 export default DataFetching;
