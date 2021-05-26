@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TypeScript/static/css/main.e70fe77b.chunk.css",
+    "main.js": "/TypeScript/static/js/main.d9bda647.chunk.js",
+    "main.js.map": "/TypeScript/static/js/main.d9bda647.chunk.js.map",
+    "runtime-main.js": "/TypeScript/static/js/runtime-main.3c40b63c.js",
+    "runtime-main.js.map": "/TypeScript/static/js/runtime-main.3c40b63c.js.map",
+    "static/js/2.e2340558.chunk.js": "/TypeScript/static/js/2.e2340558.chunk.js",
+    "static/js/2.e2340558.chunk.js.map": "/TypeScript/static/js/2.e2340558.chunk.js.map",
+    "index.html": "/TypeScript/index.html",
+    "static/css/main.e70fe77b.chunk.css.map": "/TypeScript/static/css/main.e70fe77b.chunk.css.map",
+    "static/js/2.e2340558.chunk.js.LICENSE.txt": "/TypeScript/static/js/2.e2340558.chunk.js.LICENSE.txt",
+    "static/media/source_icons_delete-circled-outline.66a85be4.svg": "/TypeScript/static/media/source_icons_delete-circled-outline.66a85be4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c40b63c.js",
+    "static/js/2.e2340558.chunk.js",
+    "static/css/main.e70fe77b.chunk.css",
+    "static/js/main.d9bda647.chunk.js"
+  ]
+}
