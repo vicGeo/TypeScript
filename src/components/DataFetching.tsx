@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./DataFetching.css";
+import image from "../images/source_icons_delete-circled-outline.svg";
+
 
 interface IPost {
   userId: number;
