@@ -17,7 +17,7 @@ function DataFetching() {
     axios
       .get("http://jsonplaceholder.typicode.com/posts")
       .then((res) => {
-        // console.log(res);
+        //console.log(res);
         setPosts(res.data);
       })
       .catch((err) => {
@@ -32,6 +32,12 @@ function DataFetching() {
   const handleShow = () => {
     setShowPosts(!showPosts);
     getPosts();
+  };
+
+  const handleRemove = (id: number) => {
+    const removePost = posts.filter((post) => post.id !== id);
+
+    setPosts(removePost);
   };
 
   return (
@@ -55,6 +61,13 @@ function DataFetching() {
                 <div className="title_post">{post.title}</div>
                 <div className="user_id">User {post.userId}</div>
                 <div className="comment_post">{post.body}</div>
+                <div className="image">
+                  <img
+                    src={image}
+                    alt="trash"
+                    onClick={() => handleRemove(post.id)}
+                  ></img>
+                </div>
               </div>
             </div>
           ))}
